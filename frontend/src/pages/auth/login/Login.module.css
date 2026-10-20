@@ -1,0 +1,128 @@
+/* SignUp.module.css or Login.module.css */
+
+.authContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  padding: 1rem;
+}
+
+.authCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: var(--shadow-lg);
+}
+
+.authTitle {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.authSubtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.authError {
+  background-color: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.formGroup input {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formGroup input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2);
+}
+
+.formGroup input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.authBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-primary);
+  color: var(--accent-text);
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  min-height: 44px;
+}
+
+.authBtn:hover {
+  background-color: var(--accent-primary-hover);
+}
+
+.authBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.authFooter {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.authFooter a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.authFooter a:hover {
+  text-decoration: underline;
+}

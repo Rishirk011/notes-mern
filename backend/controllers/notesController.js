@@ -14,8 +14,8 @@ export const addNote = (asyncHandler(async (req,res) => {
     const {title,body,category,images,isPinned} = req.body;
 
     if(!req.user.id){
-        res.status(400);
-        throw new Error("invalid credentials");
+        res.status(401);
+        throw new Error("unauthorized access");
     }
 
     const note = await notesModel.create({

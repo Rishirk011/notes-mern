@@ -58,7 +58,7 @@ export const loginUser = (asyncHandler(async (req,res) => {
 
     if(user && (await bcrypt.compare(password,user.password))){
         
-        res.status(200).json({
+        res.json({
             _id:user.id,
             name:user.name,
             email:user.email,

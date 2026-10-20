@@ -1,86 +1,56 @@
 :root {
-  --bg-primary: #f8fafc;
-  --bg-surface: #ffffff;
-  --bg-subtle: #f1f5f9;
+  /* Dark Notes Theme (Default) */
+  --bg-primary: #121212;
+  --bg-surface: #1a1a1e;
+  --bg-subtle: #242429;
 
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-muted: #64748b;
-
-  --border-color: #e2e8f0;
-
-  --accent-primary: #1e3a8a;
-  --accent-primary-hover: #1e40af;
-  --accent-text: #ffffff;
-
-  --badge-bg: #e2e8f0;
-  --badge-text: #1e293b;
-  --badge-active-bg: #1e3a8a;
-  --badge-active-text: #ffffff;
-
-  --pin-active: #d97706;
-  --pin-inactive: #94a3b8;
-
-  --overlay-bg: rgba(15, 23, 42, 0.4);
-
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-
-  /* Bridge your variables directly into Bootstrap 5 internal variables */
-  --bs-body-color: var(--text-primary);
-  --bs-body-bg: var(--bg-primary);
-  --bs-border-color: var(--border-color);
-  --bs-secondary-color: var(--text-muted);
-}
-
-.dark {
-  --bg-primary: #0f172a;
-  --bg-surface: #1e293b;
-  --bg-subtle: #334155;
-
-  --text-primary: #ffffff;
-  --text-secondary: #f1f5f9;
+  --text-primary: #f4f4f5;
+  --text-secondary: #d4d4d8;
   --text-muted: #94a3b8;
 
-  --border-color: #334155;
+  --border-color: #2e2e35;
 
-  --accent-primary: #3b82f6;
-  --accent-primary-hover: #60a5fa;
-  --accent-text: #ffffff;
+  --accent-primary: #f59e0b;
+  --accent-primary-hover: #d97706;
+  --accent-text: #121212;
 
-  --badge-bg: #334155;
-  --badge-text: #f8fafc;
-  --badge-active-bg: #3b82f6;
-  --badge-active-text: #ffffff;
+  --badge-bg: #242429;
+  --badge-text: #f4f4f5;
+  --badge-active-bg: #f59e0b;
+  --badge-active-text: #121212;
 
-  --pin-active: #fbbf24;
-  --pin-inactive: #64748b;
+  --pin-active: #f59e0b;
+  --pin-inactive: #52525b;
 
-  --overlay-bg: rgba(0, 0, 0, 0.7);
+  --overlay-bg: rgba(0, 0, 0, 0.75);
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 8px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 24px -6px rgba(0, 0, 0, 0.7);
+}
 
-  /* Bridge dark mode overrides into Bootstrap internal variables */
-  --bs-body-color: var(--text-primary);
-  --bs-body-bg: var(--bg-primary);
-  --bs-border-color: var(--border-color);
-  --bs-secondary-color: var(--text-muted);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   margin: 0;
+  padding: 0;
+  border: 0;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Ensure Bootstrap components use surface backgrounds */
+/* Base card and modal component styles */
 .card,
 .modal-content {
   background-color: var(--bg-surface);
   color: var(--text-primary);
-  border-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
 }
