@@ -1,0 +1,28 @@
+
+.heading{
+    background-color: red;
+    width: 100%;
+    height: 10vh;
+    padding: 0.2rem;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.inputBody{
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 80vh;
+    background-color: aqua;
+    font-size: 1.25rem;
+    letter-spacing: 0.07rem;
+    padding: 0.25rem;
+    resize: none;
+}
+
+.inputBody:focus{
+    outline: none;
+    border: 2px solid blanchedalmond;
+}
+
+

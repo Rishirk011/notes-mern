@@ -3,7 +3,7 @@ import AppLayout from './layouts/appLayout/AppLayout';
 import AuthLayout from './layouts/authLayout/AuthLayout';
 import SignUp from './pages/auth/signup/SignUp';
 import Login from './pages/auth/login/Login';
-import Home from './pages/dashboard/Home';
+import Home from './pages/dashboard/home/Home';
 import Notes from './pages/dashboard/Notes';
 import useAuthStore from './store/AuthStore';
 

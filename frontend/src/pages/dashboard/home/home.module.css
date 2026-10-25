@@ -1,0 +1,11 @@
+.btn{
+    border: none;
+    position: fixed;
+    top: 80%;
+    right: 10%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px;
+    font-size: 1rem;
+    
+}   
