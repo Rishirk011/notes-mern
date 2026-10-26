@@ -6,9 +6,12 @@ const NotePage = () => {
         
         <div className={styles.container}>
             
-            <div className={styles.heading}>
+            <div className={styles.header}>
+            
+                <textarea placeholder='Title' className={styles.inputHead}>
 
-
+                </textarea>
+            
             </div>
 
             <div className={styles.body}>
